@@ -1,109 +1,221 @@
-# Healthcare Data Analysis using Power BI
+# 🏥 Healthcare Data Analysis using Power BI
 
+An **interactive Power BI dashboard** designed to analyze hospital visitor data and uncover meaningful insights for healthcare decision-making.  
 
-**Introduction**
+This project applies **data transformation, data modeling, and DAX calculations** to visualize patient demographics, hospital visit patterns, wait times, and satisfaction levels. The goal is to support healthcare administrators in improving **operational efficiency, patient experience, and resource planning** using business intelligence tools.
 
-Created an interactive dashboard using Power BI to reveal key trends in hospital visitor data for informed decision-making. Utilized DAX for insights into patient demographics and service usage, boosting operational efficiency and patient satisfaction. This dynamic data visualization tool incorporates data modeling principles and various data sources for effective data transformation. By implementing KPIs and utilizing Power Query, healthcare professionals can explore interactive visuals that enhance resource optimization and improve patient care quality through business intelligence.
+---
 
-<br />
+# 📑 Table of Contents
 
-**Table of Contents**
+- Overview
+- Technologies & Skills
+- Dataset Description
+- Data Processing
+- Key Insights
+- Dashboard Preview
+- Contributing
+- License
+- Contact
 
-1. Key Technologies and Skills
-2. Features
-3. Contributing
-4. License
-5. Contact
+---
 
-<br />
+# 📖 Overview
 
-**Key Technologies and Skills**
-- Power BI
-- Power Query Editor
-- Data Analysis Expressions (DAX)
-- Excel
+Healthcare institutions generate large amounts of visitor data daily. Analyzing this data effectively can help hospitals improve **service quality, patient satisfaction, and operational management**.
 
-<br />
+This Power BI dashboard provides insights into:
 
-**Features**
+- Visitor traffic patterns
+- Demographic distribution
+- Wait time efficiency
+- Department referrals
+- Patient satisfaction
 
-#### Data Understanding:
+Using **Power Query, DAX measures, and data modeling**, the dashboard transforms raw healthcare data into **clear and actionable insights**.
 
-The healthcare dataset includes features like Date, ID, Gender, Age, Race, Moment (AM/PM), Weekday/Weekend, Admin Flag (Patient/Non-Patient), Department Referral, and Satisfaction Score. These fields allow for a detailed look at visitor demographics, visit timings, and department engagement, creating a strong basis for trend analysis and operational insights.
+---
 
+# 🛠 Technologies & Skills
 
-#### Data Preprocessing:
+- **Power BI**
+- **Power Query Editor**
+- **Data Analysis Expressions (DAX)**
+- **Excel**
+- **Data Modeling**
+- **ETL (Extract, Transform, Load)**
+- **Business Intelligence Visualization**
 
-   - **Data Normalization and Imputation:** In the Power Query Editor, the dataset underwent an ETL (Extract, Transform, Load) process, which included normalization by splitting tables to enhance data organization and clarity. Missing values were addressed through imputation techniques, ensuring that the dataset remained robust and reliable for analysis while maintaining consistency across various features.
+---
 
-   - **DAX Calculations and Data Modeling:** Data Analysis Expressions(DAX) were utilized to create calculated fields for aggregation, allowing for sophisticated analysis of the healthcare data. This facilitated effective data modeling by establishing relationships between tables, enabling comprehensive insights and enhancing the overall interpretability of the dashboard.
+# 📂 Dataset Description
 
+The healthcare dataset includes the following attributes:
 
-#### Visit Trends and Patterns:
+| Field | Description |
+|------|-------------|
+| Date | Date of hospital visit |
+| ID | Unique visitor identifier |
+| Gender | Visitor gender |
+| Age | Age of the visitor |
+| Race | Ethnicity classification |
+| Moment (AM/PM) | Visit time of day |
+| Weekday/Weekend | Day classification |
+| Admin Flag | Patient or non-patient |
+| Department Referral | Department visited |
+| Satisfaction Score | Visitor satisfaction rating |
 
-   - **Daily Visits:** The daily visitor trend shows a gradual increase from the start of each month, peaking towards the end, and then dropping on the last day. This suggests a higher influx of visitors in the final week of every month.
+These features allow detailed analysis of **visitor demographics, timing patterns, and departmental engagement**.
 
-   - **Monthly Visits:** From April to October, there was a noticeable increase in visitor counts, particularly during the summer and rainy seasons. This trend indicates that seasonal factors significantly impact hospital traffic.
-   
-   - **Yearly Visits:** The Visitor counts increased by **5.8%** from 2019 to 2020, suggesting either an increase in health issues or growing trust in the hospital’s services. This rise may reflect both higher demand for healthcare and improved patient satisfaction.
+---
 
-   - **Quarterly Visits:** The second and third quarters exhibited visitor volumes that were **53.9%** higher than the first and fourth quarters. This indicates that mid-year periods are busier, potentially due to seasonal illness peaks.
+# ⚙️ Data Processing
 
+## Data Cleaning & Transformation
 
-#### Time-Based Distribution:
+Using **Power Query Editor**, the dataset underwent an ETL process including:
 
-   - **Moment Distribution:** Visitor flow is evenly split between AM and PM hours, with a slight **0.6%** increase during AM visits. This indicates steady demand throughout the day, likely from a mix of appointments and walk-ins.
-   
-   - **Day of Week Distribution:** Visitor volumes peak on Mondays and Wednesdays, while Fridays have the lowest counts. This suggests a mid-week preference for hospital visits, possibly due to increased medical needs.
-   
-   - **Weekday vs Weekend:** Weekday visits are **148.83%** higher than weekends, reflecting significant weekday traffic. This large difference is due to fewer staff or reduced hours on weekends, encouraging visits during the week.
+- Data cleaning and normalization
+- Handling missing values using imputation
+- Splitting tables to improve organization
+- Data transformation for analysis readiness
 
+## Data Modeling & DAX
 
-#### Visitor Wait Time Analysis:
+Advanced analysis was enabled using:
 
-   - **Average Wait Time:** On average, visitors wait about 35 minutes, with **90.9%** experiencing waits between 20 to 60 minutes. This indicates a significant area for potential process improvement in reducing wait times.
-   
-   - **Short Wait Times:** Only **9.1%** of visitors experience shorter wait times of 10 to 20 minutes. This low percentage highlights a clear opportunity to enhance service speed and overall patient satisfaction.
+- DAX calculated measures
+- Table relationships
+- Aggregated metrics for KPIs
+- Structured data modeling for dashboard insights
 
+---
 
-#### Demographic Insights:
+# 📊 Key Insights
 
-   - **Age Group Distribution:** Visitors of all ages (0 to 75) show similar frequency, while the 75+ age group constitutes only **5.04%**. This may reflect either fewer visits or a smaller demographic within this age range.
-   
-   - **Race Distribution:** White and African American visitors comprise the majority, with Asians at a moderate count. Pacific Islander and Native American groups together account for **11.37%**, reflecting a diverse patient population.
-   
-   - **Gender Distribution:** Male visitors outnumber females by **4.86%**, while the "Not Specified" category represents a minimal 0.26%. This slight gender disparity highlights the need for targeted engagement strategies.
+## Visitor Trends
 
+### Daily Visits
+Visitor counts increase steadily throughout the month, reaching their peak in the final week before dropping on the last day.
 
-#### Satisfaction and Departmental Insights:
+### Monthly Visits
+Visitor traffic increases significantly between **April and October**, indicating possible seasonal health trends.
 
-   - **Satisfaction Score Distribution:** The average satisfaction score is **5 out of 10**, indicating that most visitors have a neutral or average perception of the services, showing room for quality improvement.
+### Yearly Visits
+Visitor numbers increased by **5.8% from 2019 to 2020**, suggesting growing healthcare demand or improved hospital trust.
 
-   - **Department Referrals:** General Practice and Orthopedics patients account for **30.75%**, while other departments, including Physiotherapy and Cardiology, represent **10.64%**. Notably, non-referred patients constitute a substantial **58.67%** of total visitors.
+### Quarterly Visits
+Visitor volumes in **Q2 and Q3 were 53.9% higher** than Q1 and Q4, indicating higher activity during mid-year.
 
-   - **Admin Flag Distribution:** **50.04%** of visitors are fully registered patients, while **49.96%** are either visitors or individuals not registered for treatment. This indicates a significant portion of the hospital's traffic consists of non-registered individuals.
+---
 
+## Time-Based Distribution
+
+### AM vs PM Visits
+Hospital visits are evenly distributed across the day with a slight **0.6% increase during morning hours**.
+
+### Day of Week Trends
+- Highest visits: **Monday and Wednesday**
+- Lowest visits: **Friday**
+
+### Weekday vs Weekend
+Weekday visits exceed weekend visits by **148.83%**, indicating that most hospital activity occurs during weekdays.
+
+---
+
+## Wait Time Analysis
+
+### Average Wait Time
+Visitors wait an average of **35 minutes**.
+
+### Wait Time Distribution
+- **90.9%** wait between **20–60 minutes**
+- **9.1%** wait between **10–20 minutes**
+
+This indicates opportunities for improving service speed and reducing waiting times.
+
+---
+
+## Demographic Insights
+
+### Age Groups
+Visitors aged **0–75** appear with similar frequency, while the **75+ age group accounts for 5.04%**.
+
+### Race Distribution
+Major visitor groups include:
+
+- White
+- African American
+- Asian
+
+Pacific Islander and Native American visitors together represent **11.37% of the dataset**, highlighting a diverse population.
+
+### Gender Distribution
+Male visitors exceed female visitors by **4.86%**, while the "Not Specified" category accounts for **0.26%**.
+
+---
+
+## Satisfaction & Department Insights
+
+### Satisfaction Score
+The average satisfaction score is **5/10**, suggesting moderate satisfaction levels and potential areas for improvement.
+
+### Department Referrals
+- **General Practice + Orthopedics:** 30.75%
+- **Physiotherapy + Cardiology:** 10.64%
+- **Non-referred visitors:** 58.67%
+
+### Admin Flag Analysis
+- **Registered patients:** 50.04%
+- **Non-patients or visitors:** 49.96%
+
+This shows that almost half of hospital visitors are not formally registered patients.
+
+---
+
+# 📊 Dashboard Preview
+
+### Healthcare Dashboard 1
 ![](https://github.com/gopiashokan/Healthcare-Data-Analysis-using-PowerBI/blob/main/Dashboard/Healthcare_Dashboard_1.JPG)
+
+### Healthcare Dashboard 2
 ![](https://github.com/gopiashokan/Healthcare-Data-Analysis-using-PowerBI/blob/main/Dashboard/Healthcare_Dashboard_2.JPG)
 
-<br />
+---
 
-**Contributing**
+# 🤝 Contributing
 
-Contributions to this project are welcome! If you encounter any issues or have suggestions for improvements, please feel free to submit a pull request.
+Contributions are welcome.
 
-<br />
+If you would like to contribute:
 
-**License**
+1. Fork the repository
+2. Create a new branch
+3. Make improvements
+4. Submit a pull request
 
-This project is licensed under the MIT License. Please review the LICENSE file for more details.
+Suggestions and improvements are always appreciated.
 
-<br />
+---
 
-**Contact**
+# 📜 License
 
-📧 Email: gopiashokankiot@gmail.com 
+This project is licensed under the **MIT License**.  
+See the `LICENSE` file for more information.
 
-🌐 LinkedIn: [linkedin.com/in/gopiashokan](https://www.linkedin.com/in/gopiashokan)
+---
 
-For any further questions or inquiries, feel free to reach out. We are happy to assist you with any queries.
+# 📬 Contact
+
+**Gopi Ashokan**
+
+📧 Email: gopiashokankiot@gmail.com  
+
+🌐 LinkedIn:  
+https://www.linkedin.com/in/gopiashokan
+
+Feel free to reach out for questions, suggestions, or collaboration opportunities.
+
+---
+
+⭐ If you found this project useful, consider giving it a **star on GitHub** to support the project.
