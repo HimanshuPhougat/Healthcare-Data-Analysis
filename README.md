@@ -207,12 +207,11 @@ See the `LICENSE` file for more information.
 
 # 📬 Contact
 
-**Gopi Ashokan**
+**Himanshu Phougat**
 
-📧 Email: gopiashokankiot@gmail.com  
+📧 Email: himanshuphougat45@gmail.com  
 
-🌐 LinkedIn:  
-https://www.linkedin.com/in/gopiashokan
+
 
 Feel free to reach out for questions, suggestions, or collaboration opportunities.
 
